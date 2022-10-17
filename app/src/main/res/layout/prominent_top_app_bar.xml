@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="128dp"
+        android:layout_width="match_parent"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="72dp"
+            app:expandedTitleMarginBottom="28dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:id="@+id/topAppBar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:title="page title"
+                android:elevation="0dp"
+                app:menu="@menu/top_app_bar"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                >
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Note: A RecyclerView can also be used -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Scrollable content -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.MaterialComponents.Headline1"
+            android:text="aaaaaaaahhhhhhhhhhhhhhhaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
